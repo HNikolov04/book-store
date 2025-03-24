@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Details</title>
+    <link rel="stylesheet" href="/client/css/style.css">
+    <script src="/client/js/book.js" defer></script>
+</head>
+<body>
+    <header>
+        <nav class="nav-bar">
+            <ul>
+                <li>
+                    <a class="logo" href="/client/html/index.html">
+                        <img src="/client/assets/images/logo/bookstore_logo.png" alt="Book Store Logo">
+                        <h1>Book Store</h1>
+                    </a>
+                </li>
+                <li>
+                    <a class="admin" href="/client/html/management.html">Management</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="book-page">
+            <div class="book-container">
+                <div class="book-image">
+                    <img id="bookImage" src="" alt="Book Image">
+                </div>
+                <div class="book-info">
+                    <h2 id="bookTitle"></h2>
+                    <p class="short-desc" id="bookShortDescription"></p>
+                    <p class="full-desc" id="bookFullDescription"></p>
+                    <p class="price" id="bookPrice"></p>
+                </div>
+            </div>
+            <section class="buying-section">
+                <form id="purchaseForm" class="purchase-form">
+                    <h3>Purchase</h3>
+                    <input type="hidden" id="bookId">
+                    <div class="form-group">
+                        <label for="customerName">Name:</label>
+                        <input type="text" id="customerName" name="name" required autocomplete="name">
+                    </div>
+                    <div class="form-group">
+                        <label for="customerAddress">Address:</label>
+                        <input type="text" id="customerAddress" name="address" required autocomplete="street-address">
+                    </div>
+                    <div class="form-group quantity-box">
+                        <label for="orderQuantity">Quantity:</label>
+                        <input type="number" id="orderQuantity" name="quantity" value="1" min="1" required autocomplete="off">
+                    </div>
+                    <button type="submit">Buy</button>
+                </form>
+            </section>
+            <section class="reviews-section">
+                <h3>Customer Reviews</h3>
+                <div class="reviews" id="reviewsContainer">
+                </div>
+                <h3>Leave a Review</h3>
+                <form id="reviewForm" class="review-form">
+                    <label for="review">Your Review:</label>
+                    <textarea id="review" name="review" required></textarea>
+                    <button type="submit">Submit Review</button>
+                </form>
+            </section>
+            <a href="/client/html/index.html" class="back-button">Back to Store</a>
+        </section>
+    </main>
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 BookStore. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>

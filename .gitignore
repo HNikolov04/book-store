@@ -1,0 +1,65 @@
+# =============================================================
+# 🔹 Ignore Visual Studio and .NET build files
+# =============================================================
+
+server/.vs/
+server/**/bin/
+server/**/obj/
+server/src/.vs
+server/**/Properties/launchSettings.json
+*.suo
+*.user
+*.csproj.user
+*.bak
+
+# Local database files (if generated)
+*.mdf
+*.ldf
+*.db
+
+# Ignore local app settings (optional)
+server/**/appsettings.Development.json
+server/**/appsettings.Local.json
+server/**/appsettings.json
+
+# =============================================================
+# 🔹 Ignore EF Core Migrations (optional - if regenerated)
+# =============================================================
+
+# Uncomment if you don’t want migrations tracked
+# server/**/Migrations/
+
+# =============================================================
+# 🔹 Ignore Frontend build & dependencies
+# =============================================================
+
+client/node_modules/
+client/dist/
+client/build/
+
+# =============================================================
+# 🔹 Ignore Logs
+# =============================================================
+
+logs/
+*.log
+npm-debug.log*
+
+# =============================================================
+# 🔹 Ignore System & Editor files
+# =============================================================
+
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# VSCode / JetBrains IDE
+.vscode/
+.idea/
+
+# =============================================================
+# 🔹 Ignore Git & Credential files
+# =============================================================
+
+*.orig
+.git-credentials
