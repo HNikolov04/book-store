@@ -30,14 +30,14 @@ A full-stack **Book Store** application developed as a student project at Techni
 
 ```
 book-store/
-├── server/                 # Backend C# solution
+├── server/               # Backend C# solution
 │   └── src/
-│       ├── BookStore.Api/           # API endpoints and configuration
-│       ├── BookStore.Application/   # Application logic and DTOs
-│       ├── BookStore.Domain/        # Domain entities and interfaces
-│       └── BookStore.Infrastructure/# Data access and migrations
-└── client/                 # Frontend application
-    ├── html/              # HTML pages
+│       ├── BookStore.Api/            # API endpoints and configuration
+│       ├── BookStore.Application/    # Application logic and DTOs
+│       ├── BookStore.Domain/         # Domain entities and interfaces
+│       └── BookStore.Infrastructure/ # Data access and migrations
+└── client/               # Frontend application
+    ├── html/             # HTML pages
     ├── css/              # Stylesheets
     ├── js/               # JavaScript files
     └── assets/           # Images and other static files
